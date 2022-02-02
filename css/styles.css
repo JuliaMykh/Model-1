@@ -1,0 +1,120 @@
+/* основной цвет абзацев rgba(0, 0, 0, 0.8)
+основной цвет заголовков #000000
+основной синий #18A0FB
+основной белый #FFFFFF
+background серый #F5F5F5
+ */
+
+:root {
+  --main-white-color: #ffffff;
+  --main-blue-color: #18a0fb;
+  --title-color: #000000;
+  --main-text-color: rgba(0, 0, 0, 0.8);
+  --background-color: #f5f5f5;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: var(--main-white-color);
+  color: var(--main-text-color);
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
+}
+.list {
+  list-style: none;
+}
+/* li {
+  list-style: none;
+} */
+.section-title {
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+}
+/* Хедер */
+.logo {
+  color: var(--title-color);
+  font-size: 28px;
+  line-height: 1.14;
+}
+.logo:hover {
+  color: var(--main-blue-color);
+}
+.site-nav .link {
+  color: var(--main-blue-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-color);
+}
+.site-nav .link.current {
+  color: var(--title-color);
+}
+
+.button {
+  color: var(--main-text-color);
+  background: var(--main-blue-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.button.primary {
+  color: var(--main-blue-color);
+  background: var(--main-white-color);
+}
+.button.secondary {
+  color: var(--main-white-color);
+  background: var(--main-blue-color);
+}
+/* Герой */
+.hero-title {
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
+}
+/* Приемущества */
+.feature-list .title,
+.work-list .title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.feature-list .text {
+}
+/* Примеры работ */
+.none-title {
+  display: none;
+}
+/* Отзывы */
+.section-description {
+  font-size: 36px;
+  line-height: 1.39;
+}
+/* Футер */
+.footer-nav .link {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+  color: var(--main-blue-color);
+}
+.footer-p {
+  font-size: 15px;
+  line-height: 1.6;
+}
